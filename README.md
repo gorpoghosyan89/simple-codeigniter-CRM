@@ -1,4 +1,4 @@
-Open311 Simple CRM
+ Simple Codeigniter CRM
 ====================
 
 Open311 Simple CRM is a basic open source web application for storing problem
