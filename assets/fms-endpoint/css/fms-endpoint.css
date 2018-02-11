@@ -1,0 +1,348 @@
+body#fmse-admin {
+    background-color: #ccc;
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.fmse-header {
+    margin:0;
+    padding: 1em 1em 0.5em 1em;
+    color: #fff;
+    background-color: #999;
+    border-bottom:2px solid #666;
+}
+.fmse-header h1 {
+    margin:0 0 0.5em -1em;
+    text-shadow:-1px -1px #666;
+    background-image:url(../images/fms-endpoint-title.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 96px;
+    min-height: 66px;
+    line-height: 66px;
+}
+
+/* explicitly inherit, because the databases CSS defines a fixed font size, gah */
+.fmse-nav a {
+  	font-size: inherit;
+}
+
+.fmse-nav ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.fmse-nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0 0.333em 0 0;
+}
+.fmse-nav ul li.help-link {
+  float: right;
+}
+.fmse-nav ul li a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+.fmse-nav ul li a.admin-link {
+  background-color: #533;  
+}
+
+.fmse-nav ul li a.user {
+    background-color: #666;
+    color: #fff;
+    padding: 4px 8px;
+}
+.fmse-nav ul li a:hover, .fmse-footer a:hover {
+    background-color: #933;
+}
+
+#current-user-nav {
+    position:absolute;
+    top: 20px;
+    right:10px;
+    padding: 4px 0px 3px 0px;
+    background-color:#ccc;
+    color: #666;
+}
+
+.fmse-content {
+    margin: 0;
+    padding: 1em 1em 3em 1em;   
+    background-color: #eee; 
+}
+
+.dataTables_wrapper {
+    font-size:100%;
+}
+
+.fmse-footer {
+    border-top: 2px solid #666;
+    padding: 1em 1.5em 1em 1em;
+    text-align: right;
+}
+.fmse-footer a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #999;
+    padding: 4px 8px;
+}
+
+a.fmse-web-link {
+    display:inline-block;
+    min-height:16px;
+    background-image:url(../images/fms-link.png);
+    background-position: 0 -84px;
+    background-repeat:no-repeat;
+    padding-left: 20px;    
+}
+a.fmse-web-link-fms {
+    display:inline-block;
+    min-height:16px;
+    background-image:url(../images/fms-link.png);
+    background-position: 0 0;
+    background-repeat:no-repeat;
+    padding-left: 20px;    
+}
+.fmse-prio {
+    display:block;
+    padding: 2px 2px 2px 8px;
+}
+.fmse-prio-2 {
+    color: #fff;
+    background-color: #4a4;
+}
+.fmse-prio-1 {
+    background-color: #9e9;
+}
+.fmse-prio0 {
+    background-color: #fd9;
+}
+.fmse-prio1 {
+    background-color: #e99;
+}
+.fmse-prio2 {
+    color: #fff;
+    background-color: #f66;
+}
+.text-content  {
+    line-height: 1.6em;
+    margin: 1em 3em;
+}
+.text-content ul li {
+    margin: 0.666em;
+}
+
+/* used for error messages in auth, e.g. login */
+ul.warnings, ul.success_messages {
+    list-style-type: none;
+    margin: 1em 0;
+    padding:0;
+}
+ul.warnings .details, ul.success_messages .details {
+    background-color: #fff;
+    padding: 10px 1em 1em 40px;
+    margin-left: 20px;
+    color: #666;
+    background-image:url(../images/lightbulb.png);
+    background-repeat: no-repeat;
+    background-position: 8px 0px;
+}
+.details li {
+    margin: 0.5em;
+}
+
+#infoMessage p, ul.warnings li p{
+   background-color: #fcc;
+   padding: 1em 1em;
+   margin: 0.5em 0 0 0;
+   border-left: 3px solid #f00;
+}
+ul.success_messages li p {
+  background-color: #cfc;
+  padding: 1em 1em;
+  margin: 0.5em 0 0 0;
+  border-left: 3px solid #0f0;
+}
+.user_table {
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+.user_table tr {
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.user_table tr td, .user_table tr th {
+    padding: 0.5em;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background-color: #ccc;
+}
+.user_table tr th {
+	background-color: #999;
+	font-weight: bold;   
+}
+
+.user_table tr.inactive {
+  color: #999;
+}
+.user_table tr td span.admin {
+  background-color: #933;
+  color: #fff;
+  padding: 0.2em;
+  display:block;
+}
+
+.code {
+    font-family: monospace;
+}
+.open311api_hints {
+    display: block;
+    margin-left:4em;
+}
+.single-report {
+  margin: 1em 0;
+  position:relative;
+}
+.report-data {
+}
+
+.single-report dl {
+  clear: both;
+  padding: 0;
+  border-top:1px solid #fff;
+  margin:0;
+}
+.single-report .report-data dt {
+  float: left;
+  width: 8em;
+  margin: 0.1em 0 0.1em 0;
+  padding: 0.25em;
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  border-right: 1px solid #fff;
+}
+.single-report .report-data .location-data dt,
+.single-report .report-data .time-data dt,
+.single-report .report-data .other-data dt {
+  background-color:#ccc;
+}
+
+.single-report .report-data dd {
+  margin: 0 0 0 9em;
+  padding: 0.25em;
+}
+.single-report span.report-id {
+  font-weight: bold;
+  font-size: 120%;
+  padding-right:2em; // allow for link to the right
+}
+.single-report img.image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid #666;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.report-id-link {
+  background-image:url(/assets/fms-endpoint/images/report.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  min-height: 16px;
+  color:#000;
+  padding-left: 20px;
+  display: inline-block;
+}
+.fmse-status-0, .fmse-status-1 {
+  display:block;
+  padding: 2px 2px 2px 8px;
+}
+.fmse-status-0 {
+  background-color:#fdd;
+}
+.fmse-status-1 {
+  background-color:#dfd;
+}
+
+.departmental-link {
+    background-color:#eee;
+    float:left;    
+}
+.departmental-link a {
+    background-position: 0 0px;
+    background-repeat:no-repeat;
+    border-left: 1.25em solid #eea300;
+}
+.departmental-link a.fmse-web-link-fms, .departmental-link a.fmse-web-link {
+    background-image:url(../images/fms-link-on-yellow.png);
+    padding-left:28px;
+    display:inline;
+    min-height:auto;
+    border-left: none;
+}
+.departmental-link a.fmse-web-link{
+    padding-left: 0.5em;
+    background-image: none;
+    border-left: 1.25em solid #EEA300;   
+}
+.departmental-link a.fmse-web-link:hover {
+    border-left: 1.25em solid #000;   
+}
+
+.open311-status {
+ background-color:#eee;
+ margin-left:1em;
+}
+a.open311-status-off {
+  border-left: 1.25em solid #900;   
+}
+a.open311-status-on {
+  border-left: 1.25em solid #060;   
+}
+.open311-status a:hover {
+  border-left: 1.25em solid #000;   
+}  
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: pointer;
+}
+.admin-inline-text {
+  padding-left: 2em; font-size: 80%;
+}
+
+.login-form {
+    margin: 2em 0;
+    padding: 1em 0;
+    border-left: 3px solid #ff9900;
+    background-color: #eeb;
+}
+.login-form div{
+    margin: 0.5em;
+}
+.login-form label{
+    display: inline-block;
+    width: 8em;
+    text-align: right;
+    padding-right: 1em;
+}
+.login-form .login-submit {
+    margin: 0.5em 0 0 8em;
+    padding: 1em;    
+}
+.login-form input {
+    font-size: 130%;
+}
+.login-form .login-identity input {
+    width: 16em;
+}
+.fmse-announcement {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}

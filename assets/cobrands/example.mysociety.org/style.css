@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------*
+ * example.mysociety.org/style.css demonstrates cobranded CSS:  *
+ * change how the endpoint looks by specifying a cobrand_name   *
+ * in your config (in this case, 'example.mysociety.org', which *
+ * is the name of the directory in web/assets/cobrands)         *
+ *--------------------------------------------------------------*/
+
+body#fmse-admin {
+    background-color:#ddf;
+}
+#fmse-admin .fmse-header {
+    background-color: #99d;
+}
+#fmse-admin .fmse-header h1 {
+    background-image: url(example-endpoint-title.png);
+}

@@ -1,0 +1,1 @@
+INSERT INTO `config_settings` VALUES('open311_allow_update_posts', 'yes', '<p>Should incoming status updates (which are not core Open311 functionality) be accepted? Suggested values:</p><ul><li>no &ndash; incoming status updates are rejected</li><li>yes [default] &ndash; incoming POST requests (with a valid API key) to servicerequestupdates will be accepted</li></ul>');

@@ -1,0 +1,2 @@
+ALTER TABLE reports
+	ADD COLUMN engineer VARCHAR(255);

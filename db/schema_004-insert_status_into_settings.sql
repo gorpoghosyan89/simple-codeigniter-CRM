@@ -1,0 +1,1 @@
+INSERT INTO `config_settings` VALUES('open311_simple_status_only', 'yes', '<p>Should outgoing status updates only ever be OPEN or CLOSED? Suggested values:</p><ul><li>no &ndash; status updates are sent to the client with the actual status name</li><li>yes [default] &ndash; statuses are changed to either OPEN or CLOSED when sent to the client');

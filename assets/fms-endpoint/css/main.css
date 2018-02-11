@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  padding-top: 50px;
+}
+
+.navbar .btn-group {
+  padding: 10px 0 0 0;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+.main {
+  background-color: #fff;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+footer {
+  padding: 1em 0;
+  background-color: #EEEEEE;
+  margin-top: 2em;
+}
+
+tr.admin {
+  color: darkgoldenrod;
+}
+
+/* Updates disclaimer / tease */
+.updates-tease {
+  display: block;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #efefef;
+  margin-bottom: 25px;
+}
+.updates-tease:hover {
+  color: #333;
+  text-decoration: none;
+  background-color: #9d9d9d;
+}
+
+
+
+
+
+
+

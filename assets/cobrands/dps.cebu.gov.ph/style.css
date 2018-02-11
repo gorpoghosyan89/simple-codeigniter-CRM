@@ -1,0 +1,9 @@
+body#fmse-admin {
+    background-color:#aaa;
+}
+#fmse-admin .fmse-header {
+    background-color: #5f0303;
+}
+#fmse-admin .fmse-header h1 {
+    background-image: url(/assets/fms-endpoint/images/fms-endpoint-title-bw.png);
+}
